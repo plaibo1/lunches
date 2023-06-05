@@ -1,0 +1,32 @@
+.nothingToLunchBtn {
+  width: 90%;
+  border: none;
+  background-color: #e7e7e7;
+  color: rgb(66, 66, 66);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  border-radius: 14px;
+  padding: 13px;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+
+  &:active {
+    background-color: #e0e0e0;
+    transform: translateX(-50%) scale(0.99);
+  }
+
+  @media screen and (min-width: 620px) {
+    width: 300px;
+    left: 30px;
+    transform: translate(0);
+
+    &:active {
+      transform: translateX(0) scale(0.99);
+    }
+  }
+}

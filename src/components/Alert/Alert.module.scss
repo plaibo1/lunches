@@ -1,0 +1,27 @@
+.alert {
+  user-select: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 12px;
+  padding: 12px 24px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 9px 0px;
+  background-color: #009463;
+  color: #fff;
+  animation: showOn .45s ease-in-out;
+
+  @keyframes showOn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      text-replace: translateY(0);
+    }
+  }
+}
+
+.alertError {
+  background-color: #FF3B30;
+}

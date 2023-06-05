@@ -1,0 +1,71 @@
+.wrapper {
+
+  @media screen and (min-width: 400px) {
+    width: 350px;
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .errorText {
+    color: #FF3B30;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .buttonsRow {
+    display: flex;
+    justify-content: center;
+
+    button {
+      height: 48px;
+      max-height: 48px;
+      width: 71px;
+      margin: 0 12px;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      border-radius: 12px;
+      background-color: #e7e7e7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      svg {
+        animation: spin .4s linear infinite;
+      }
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+
+      &:first-child {
+        background-color: #009463;
+        color: #fff;
+
+        &:active {
+          background-color: #01865a;
+        }
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}
